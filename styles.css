@@ -44,11 +44,6 @@ h6 {
 	text-wrap: balance;
 }
 
-div {
-	border: solid black 2px;
-	padding: 50px;
-}
-
 .container {
 	display: grid;
 	grid-template-columns: 1fr 4fr;
@@ -105,4 +100,23 @@ h1 {
 .header > div.buttons {
 	display: grid;
 	grid-auto-flow: column;
+}
+
+.main-content {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+	grid-column: 1;
+}
+
+.announcements,
+.trending {
+	grid-column: 2;
+}
+
+.project-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
