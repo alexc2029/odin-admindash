@@ -57,6 +57,7 @@ body {
 .header {
 	grid-column: 2/3;
 	background-color: white;
+	padding: 20px;
 }
 
 .main-content {
@@ -202,4 +203,25 @@ div.buttons,
 	& h2 {
 		margin-bottom: 5px;
 	}
+}
+
+search > img {
+	width: 20px;
+}
+
+form {
+	display: inline;
+}
+
+input[type="search"] {
+	border: none;
+	border-radius: 20px;
+	background-color: rgb(240, 240, 240);
+	width: 500px;
+}
+
+search {
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
