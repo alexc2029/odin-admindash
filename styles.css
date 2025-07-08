@@ -161,3 +161,16 @@ div.buttons,
 	color: white;
 	font-weight: bold;
 }
+
+.user-info > img {
+	width: 20px;
+}
+
+.project-cards img {
+	width: 20px;
+	margin-right: 15px;
+}
+
+.project-cards > div > div {
+	margin-top: 10px;
+}
