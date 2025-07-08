@@ -50,15 +50,19 @@ ul {
 body {
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 1fr 6fr;
+	grid-template-columns: 1fr 5fr;
+	background-color: rgb(240, 240, 240);
 }
 
 .header {
 	grid-column: 2/3;
+	background-color: white;
 }
 
 .main-content {
 	grid-column: 2/3;
+	gap: 30px;
+	padding: 30px;
 }
 
 .sidebar {
@@ -140,6 +144,12 @@ div.buttons,
 .project-cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: 1fr;
+	gap: 30px;
+
+	& div {
+		background-color: white;
+	}
 }
 
 .logo {
@@ -168,9 +178,28 @@ div.buttons,
 
 .project-cards img {
 	width: 20px;
-	margin-right: 15px;
 }
 
-.project-cards > div > div {
-	margin-top: 10px;
+.project-cards > div > div:nth-child(2) {
+	display: grid;
+	gap: 20px;
+	grid-auto-flow: column;
+	place-content: end;
+}
+
+.announcement-cards,
+.trending-cards {
+	background-color: white;
+	padding: 20px;
+}
+
+.project-cards > div {
+	padding: 20px;
+	display: grid;
+	border-radius: 15px;
+	border-left: 10px solid #f0b429;
+
+	& h2 {
+		margin-bottom: 5px;
+	}
 }
